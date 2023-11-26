@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Adresa</th>
+          <th>Email</th>
+          <th>Kontakt telefon</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of sviPacijenti">
+          <td>
+            <img src="assets/{{p.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{p.ime}}</td>
+          <td>{{p.prezime}}</td>
+          <td>{{p.adresa}}</td>
+          <td>{{p.email}}</td>
+          <td>{{p.kontakt_telefon}}</td>
+          <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary" (click)="obrisi(p.kor_ime)">Obrisi</button>
+                <button type="button" class="btn btn-outline-secondary" (click)="azuriraj(p.kor_ime)">Azuriraj</button>
+              </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  <app-footer></app-footer>

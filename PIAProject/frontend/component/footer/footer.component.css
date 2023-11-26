@@ -1,0 +1,12 @@
+#footer {
+    background-color: rgb(235, 176, 176);
+    color: black;
+    width: 100%;
+    height: 3rem; 
+    position: fixed;
+    bottom: 0;     
+}
+
+.copyright {
+	text-align:center;
+}

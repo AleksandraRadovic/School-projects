@@ -1,0 +1,71 @@
+<app-header></app-header>
+<div>
+    <h2>
+        <p class="text-info" *ngIf="zakazaniPregledi.length>0">Zakazani pregledi</p>
+        <p class="text-info" *ngIf="zakazaniPregledi.length==0">Nemate zakazanih pregleda</p>
+    </h2>
+</div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="zakazaniPregledi.length>0">
+      <thead>
+        <tr>
+          <th>Naziv pregleda</th>
+          <th>Datum i vreme</th>
+          <th>Ogranak ordinacije</th>
+          <th>Ime i prezime lekara</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let zp of zakazaniPregledi">
+          <td>{{zp.pregled}}</td>
+          <td>{{zp.datum}} - {{zp.vreme}}</td>
+          <td>{{zp.lekar_ogranak}}</td>
+          <td>{{zp.lekar_ime}} {{zp.lekar_prezime}}</td>
+          <td>
+            <button type="button" class="btn btn-outline-secondary" (click)="otkazi(zp.idZP)">Otkazi pregled</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div>
+    <h2>
+        <p class="text-info" *ngIf="izvestaji.length>0">Izvestaji dosadasnjih pregleda</p>
+        <p class="text-info" *ngIf="izvestaji.length==0">Do sada nemate izvestaja</p>
+    </h2>
+</div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="izvestaji.length>0">
+      <thead>
+        <tr>
+          <th>Datum i vreme pregleda</th>
+          <th>Ime lekara</th>
+          <th>Specijalizacija lekara</th>
+          <th>Razlog dolaska</th>
+          <th>Dijagnoza</th>
+          <th>Preporucena terapija</th>
+          <th>Datum kontrole</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of izvestaji">
+          <td>{{i.datum_pregleda}} - {{i.vreme_pregleda}}</td>
+          <td>{{i.lekar_ime}}</td>
+          <td>{{i.lekar_specijalizacija}}</td>
+          <td>{{i.razlog_dolaska}}</td>
+          <td>{{i.dijagnoza}}</td>
+          <td>{{i.preporucena_terapija}}</td>
+          <td>{{i.datum_kontrole}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <app-footer></app-footer>

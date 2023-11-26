@@ -1,0 +1,44 @@
+<app-header></app-header>
+<h4 class="mt-3 text-center">Novi lekar</h4>
+<div class="mx-auto d-flex justify-content-center" style="max-width: 600px;">
+    <form class="text-center mx-5" style="width: 100%;">
+       
+
+        <input type="text" name="kor_ime" class="form" placeholder="Korisnicko ime" [(ngModel)]="kor_ime">
+    <br>
+        <input type="password" name="lozinka" class="form" placeholder="Lozinka" [(ngModel)]="lozinka">
+        <br>
+        <input  type="text" name="ime" class="form" placeholder="Ime" [(ngModel)]="ime">
+        <br>
+        <input type="text" name="prezime" class="form" placeholder="Prezime" [(ngModel)]="prezime">
+        <br>
+        <input type="text" name="adresa" class="form" placeholder="Adresa" [(ngModel)]="adresa">
+        <br>
+        <input type="text" name="kontakt_telefon" class="form" placeholder="Kontakt telefon" [(ngModel)]="kontakt_telefon">
+        <br>
+        <input type="text" name="br_lek_licence" class="form" placeholder="Broj licence" [(ngModel)]="br_lek_licence">
+        <br>
+        Specijalizacija:
+        <br>
+        <select  class="form-select-center" name="specijalizacija" [(ngModel)]="specijalizacija" style="width: 40%;">
+            <option *ngFor="let s of specijalizacije" value="{{s.naziv}}">{{s.naziv}}</option>
+        </select>
+        <br>
+        <input type="text" name="ogranak_ordinacije" class="form" placeholder="Ogranak ordinacije" [(ngModel)]="ogranak_ordinacije">
+        <br>
+        <input type="text" name="email" class="form" placeholder="Email" [(ngModel)]="email">
+        <br>
+        <input type="file" id="slika" name="slika" value="" (change)="ucitaj($event)">
+        <br>
+        <button class="btn btn-outline-light text-dark mt-3" (click)="dodaj()"> Dodaj lekara</button>
+        <br>
+        <span style="color: red;">{{poruka}}</span>
+        <span style="color: red;">{{poruka_slika}}</span>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>

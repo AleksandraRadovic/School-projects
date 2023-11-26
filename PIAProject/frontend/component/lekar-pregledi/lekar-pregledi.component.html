@@ -1,0 +1,71 @@
+<app-header></app-header>
+<div>
+    <h2>
+        <p class="text-info" *ngIf="mojaTriPregleda.length>0">Zakazani pregledi</p>
+        <p class="text-info" *ngIf="mojaTriPregleda.length==0">Trenutno nemate zakazanih pregleda</p>
+    </h2>
+</div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="mojaTriPregleda.length>0">
+      <thead>
+        <tr>
+          <th>Naziv pregleda</th>
+          <th>Datum i vreme</th>
+          <th>Ime i prezime pacijenta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let zp of mojaTriPregleda">
+          <td>{{zp.pregled}}</td>
+          <td>{{zp.datum}} - {{zp.vreme}}</td>
+          <td>{{zp.pacijent_ime}} {{zp.pacijent_prezime}}</td>
+          <td class="btn-group">
+            <button type="button" class="btn btn-outline-secondary" (click)="otkazi(zp.idZP)" *ngIf="zp.obrazlozenjeFlag==false">Otkazi pregled</button>
+            <button type="button" class="btn btn-outline-secondary" (click)="obavi_pregled(zp.idZP)">Obavi pregled</button>
+          </td>
+          <td *ngIf="zp.obrazlozenjeFlag==true">
+            <input type="text" name="obrazlozenje" class="form" placeholder="Unesite obrazlozenje otkazivanja pregleda" [(ngModel)]="obrazlozenje">
+        <br>
+          </td>
+          <td *ngIf="zp.obrazlozenjeFlag==true">
+            <button type="button" class="btn btn-outline-secondary" (click)="potvrdi(zp.idZP)">Potvrdi</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div>
+    <h2>
+        <p class="text-info" *ngIf="sviMojiPacijenti.length>0">Pacijenti koji si imali preglede </p>
+        <p class="text-info" *ngIf="sviMojiPacijenti.length==0">Trenutno niste obavili nikome pregled</p>
+    </h2>
+</div>
+  <div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="sviMojiPacijenti.length>0">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime i prezime pacijenta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of sviMojiPacijenti">
+          <td>
+            <img src="assets/{{p.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{p.ime}} - {{p.prezime}}</td>
+          <td>
+            <button type="button" class="btn btn-outline-secondary" (click)="pogledaj_karton(p.kor_ime)">Karton pacijenta</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <app-footer></app-footer>

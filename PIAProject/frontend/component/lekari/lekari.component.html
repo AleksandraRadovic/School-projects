@@ -1,0 +1,89 @@
+<app-header></app-header>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Specijalizacija</th>
+          <th>Ogranak ordinacije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let l of sviLekari">
+          <td>
+            <img src="assets/{{l.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{l.ime}}</td>
+          <td>{{l.prezime}}</td>
+          <td>{{l.specijalizacija}}</td>
+          <td>{{l.ogranak_ordinacije}}</td>
+          <td>
+            <a  class="nav-link" routerLink="/profil_lekara/{{l.kor_ime}}">Pogledajte profil lekara</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 p-2 text-bg-primary">
+        <h3>Sortiranje:</h3>
+    </div>
+    <div class=" col-sm-6 btn-group">
+        <button type="button" class="btn btn-primary" (click)="sortirajImeRastuce()">Sortiraj po imenu rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajImeOpadajuce()">Sortiraj po imenu opadajuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajPreizmeRastuce()">Sortiraj po prezimenu rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajPrezimeOpadajuce()">Sortiraj po prezimenu opadajuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajSpecijalizacijuRastuce()">Sortiraj po specijalizaciji rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajSpecijalizacijuOpadajuce()">Sortiraj po specijalizaciji opadajuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajOgranakRastuce()">Sortiraj po ogranku rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajOgranakOpadajuce()">Sortiraj po ogranku opadajuce</button>
+      </div>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+    <div class="col-sm-2  text-bg-primary">
+        <h3>Pretrazivanje:</h3>
+    </div>
+    <div class="col-sm-8">
+        <input type="text" name="parametarIme" class="form" placeholder="Ime za pretragu" [(ngModel)]="parametarIme">
+        <input type="text" name="parametarPrezime" class="form" placeholder="Prezime za pretragu" [(ngModel)]="parametarPrezime">
+        <input type="text" name="parametarSpecijalizacija" class="form" placeholder="Specijalizacija za pretragu" [(ngModel)]="parametarSpecijalizacija">
+        <input type="text" name="parametarOgranka" class="form" placeholder="Ogranak za pretragu" [(ngModel)]="parametarOgranka">
+        <button type="button" class="btn btn-primary btn-lg" (click)="pretrazi()">Pretrazi</button>
+    </div>
+    <span style="color: red;">{{porukaPretrage}}</span>
+  </div>
+  <h2 *ngIf="pretrazeniLekari.length>0"> Rezultati pretrage:</h2>
+  <div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="pretrazeniLekari.length>0">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Specijalizacija</th>
+          <th>Ogranak ordinacije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pl of pretrazeniLekari">
+          <td>
+            <img src="assets/{{pl.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{pl.ime}}</td>
+          <td>{{pl.prezime}}</td>
+          <td>{{pl.specijalizacija}}</td>
+          <td>{{pl.ogranak_ordinacije}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  <app-footer></app-footer>

@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="sviLekari.length>0">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Adresa</th>
+          <th>Kontakt telefon</th>
+          <th>Broj licence</th>
+          <th>Specijalizacija</th>
+          <th>Ogranak ordinacije</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let l of sviLekari">
+          <td>
+            <img src="assets/{{l.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{l.ime}}</td>
+          <td>{{l.prezime}}</td>
+          <td>{{l.adresa}}</td>
+          <td>{{l.kontakt_telefon}}</td>
+          <td>{{l.br_lek_licence}}</td>
+          <td>{{l.specijalizacija}}</td>
+          <td>{{l.ogranak_ordinacije}}</td>
+          <td>{{l.email}}</td>
+          <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary" (click)="obrisi(l.kor_ime)">Obrisi</button>
+                <button type="button" class="btn btn-outline-secondary" (click)="azuriraj(l.kor_ime)">Azuriraj</button>
+              </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  <app-footer></app-footer>

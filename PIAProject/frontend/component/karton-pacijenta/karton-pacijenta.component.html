@@ -1,0 +1,69 @@
+<app-header></app-header>
+<div>
+    <h2>
+        <p class="text-info" *ngIf="izvestajiPacijenta.length>0">Izvestaji za pacijenta {{pacijent.ime}} {{pacijent.prezime}}</p>
+        <p class="text-info" *ngIf="izvestajiPacijenta.length==0">Nema izvestaja za pacijenta {{pacijent.ime}} {{pacijent.prezime}}</p>
+      </h2>
+</div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="izvestajiPacijenta.length>0">
+      <thead>
+        <tr>
+          <th>Datum i vreme pregleda</th>
+          <th>Ime lekara</th>
+          <th>Specijalizacija lekara</th>
+          <th>Razlog dolaska</th>
+          <th>Dijagnoza</th>
+          <th>Preporucena terapija</th>
+          <th>Datum kontrole</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of izvestajiPacijenta">
+          <td>{{i.datum_pregleda}} - {{i.vreme_pregleda}}</td>
+          <td>{{i.lekar_ime}}</td>
+          <td>{{i.lekar_specijalizacija}}</td>
+          <td>{{i.razlog_dolaska}}</td>
+          <td>{{i.dijagnoza}}</td>
+          <td>{{i.preporucena_terapija}}</td>
+          <td>{{i.datum_kontrole}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div>
+    <h2>
+        <p class="text-info" *ngIf="obavljeniPreglediBezIzvestaja.length>0">Obavljeni pregledi za koje mozete da unesete izvestaje</p>
+        <p class="text-info" *ngIf="obavljeniPreglediBezIzvestaja.length==0">Nema obavljenih pregleda za koje moze da se unese izvestaj</p>
+      </h2>
+ </div>
+ <div class="container-fluid">           
+  <table class="table-responsive table-borderless" *ngIf="obavljeniPreglediBezIzvestaja.length>0">
+    <thead>
+      <tr>
+        <th>Ime i prezime pacijenta</th>
+        <th>Naziv pregleda</th>
+        <th>Datum i vreme pregleda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let op of obavljeniPreglediBezIzvestaja">
+        <td>{{op.pacijent_ime}} {{op.pacijent_prezime}}</td>
+        <td>{{op.pregled}}</td>
+        <td>{{op.datum}} - {{op.vreme}}</td>
+        <td>
+          <button type="button" class="btn btn-outline-secondary" (click)="napisi_izvestaj(op.idZP)">Napisi izvestaj</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>
+  

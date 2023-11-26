@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div>
+  <h2>
+      <p class="text-info" *ngIf="zahteviNoviPregled.length>0">Zahtevi za nove preglede</p>
+      <p class="text-info" *ngIf="zahteviNoviPregled.length==0">Nema zahteva za nove preglede</p>
+  </h2>
+</div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="zahteviNoviPregled.length>0">
+      <thead>
+        <tr>
+          <th>Naziv pregleda</th>
+          <th>Specijalizacija</th>
+          <th>Trajanje</th>
+          <th>Cena pregleda</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let zp of zahteviNoviPregled">
+          <td>{{zp.naziv}}</td>
+          <td>{{zp.specijalizacija}}</td>
+          <td>{{zp.trajanje}}</td>
+          <td>{{zp.cena}}</td>
+          <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary" (click)="odbij(zp.idP)">Odbij</button>
+                <button type="button" class="btn btn-outline-secondary" (click)="odobri(zp.idP)">Odobri</button>
+              </div>          
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  <app-footer></app-footer>

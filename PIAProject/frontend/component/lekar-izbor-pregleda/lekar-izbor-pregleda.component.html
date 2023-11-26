@@ -1,0 +1,61 @@
+<app-header></app-header>
+<div>
+    <h2>
+        <p class="text-info" *ngIf="mojiIzabraniPregledi.length>0">Pregledi koje obavljate</p>
+    </h2>
+ </div>
+ <div class="container-fluid">           
+  <table class="table-responsive table-borderless" *ngIf="mojiIzabraniPregledi.length>0">
+    <thead>
+      <tr>
+        <th>Naziv pregleda</th>
+        <th>Trajanje pregleda</th>
+        <th>Cena pregleda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mp of mojiIzabraniPregledi">
+        <td>{{mp.naziv}}</td>
+        <td>{{mp.trajanje}} minuta</td>
+        <td>{{mp.cena}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<br>
+<div>
+    <h2>
+        <p class="text-info" *ngIf="sviPregledi.length>0">Ovde mozete odabrati preglede koje zelite da obavljate</p>
+    </h2>
+    <p style="color: red;">(Ovim izborom ponistavate sve preglede koje ste do sada izabrali da obavljate, tako da opet izaberite svaki pregled koji zelite da obavljate!)</p>
+ </div>
+ <div class="container-fluid">           
+  <table class="table-responsive table-borderless" *ngIf="sviPregledi.length>0">
+    <thead>
+      <tr>
+        <th>Naziv pregleda</th>
+        <th>Trajanje pregleda</th>
+        <th>Cena pregleda</th>
+        <th>Cekirajte preglede</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sp of sviPregledi">
+        <td>{{sp.naziv}}</td>
+        <td>{{sp.trajanje}} minuta</td>
+        <td>{{sp.cena}}</td>
+        <td>
+          <input type="checkbox" [(ngModel)]="sp.chekiranPregled">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-outline-secondary" style="width: 40%;" (click)="potvrdi()">Potvrdi</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>

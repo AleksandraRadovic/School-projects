@@ -1,0 +1,80 @@
+<header>
+    <nav class="navbar navbar-expand-lg meni">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item justify-content-center" >
+                    <p style="font-weight:bolder; font-style:oblique; color:black; margin-top: 5%;">LEKARSKA ORDINACIJA </p> 
+                </li>
+                <li  *ngIf="jeUlogovan=='ne' && (jePrijava=='da' || jeRegistracija=='da')" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="" >Pocetna strana</a>
+                </li>
+                <li *ngIf="jeUlogovan=='ne' && jePrijava=='ne' " class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/prijava">Prijava</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='ne' && jeRegistracija=='ne' && menadzerPrijava=='ne'"  class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/registracija">Registracija</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='pacijent'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/pacijent">Pocetna strana</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/menadzer">Pocetna strana</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='lekar'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/lekar">Profil</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='admin'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/admin">Pocetna strana</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='pacijent'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/profil_pacijent">Profil</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && (tipKorisnika=='pacijent' || tipKorisnika=='lekar' || tipKorisnika=='menadzer')" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/promena_lozinke">Promeni lozinku</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='pacijent'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/lekari">Lekari</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='pacijent'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/pacijent_pregledi">Pregledi</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='lekar'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/lekar_pregledi">Pregledi</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='lekar'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/razno">Razno</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='agencija'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/poslovi_agencija">Poslovi</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/menadzer_pacijent">Pacijenti</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/menadzer_lekar">Lekari</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='admin'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/dodaj_klijenta">Dodaj</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/zahtevi_registracija">Zahtevi za registraciju</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/novi_lekar">Dodaj lekara</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/novi_pregled_zahtev">Zahtevi za nove vrste pregleda</a>
+                </li>
+                <li *ngIf= "jeUlogovan=='da' && jeRegistracija=='ne' && tipKorisnika=='menadzer'" class="nav-item justify-content-end">
+                    <a  class="nav-link" routerLink="/specijalizacije_pregledi">Specijalizacije i vrste pregleda</a>
+                </li>
+                <li class="nav-item justify-content-end" *ngIf="jeUlogovan=='da'">
+                    <button class="btn btn-outline-dark mt-2" (click)="odjava()" >Odjavi se</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

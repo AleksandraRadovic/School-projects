@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div>
+    <h2>
+        <p class="text-info" *ngIf="sviPreglediLekara.length>0">Pregledi koje obavlja lekar {{lekar.ime}} {{lekar.prezime}} specijalizant {{lekar.specijalizacija}}</p>
+        <p class="text-info" *ngIf="sviPreglediLekara.length==0">Lekar {{lekar.ime}} {{lekar.prezime}} specijalizant {{lekar.specijalizacija}} trenutno ne obavlja ni jedan pregled</p>
+      </h2>
+</div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="sviPreglediLekara.length>0">
+      <thead>
+        <tr>
+          <th>Naziv pregleda</th>
+          <th>Trajanje</th>
+          <th>Cena pregleda</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pl of sviPreglediLekara">
+          <td>{{pl.naziv}}</td>
+          <td>{{pl.trajanje}} minuta</td>
+          <td>{{pl.cena}}</td>
+          <td *ngIf="pl.zakazivanje==false">
+              <button type="button" class="btn btn-outline-secondary" (click)="zakaziPregled(pl.idP)">Zakazi pregled</button>
+          </td>
+        <td *ngIf="pl.zakazivanje==true">
+          <input type="text" name="datum_vreme" class="form" placeholder="Datum u formatu YYYY-MM-DD" [(ngModel)]="datum">
+        </td>
+        <td *ngIf="pl.zakazivanje==true">
+          <input type="text" name="datum_vreme" class="form" placeholder="Datum u formatu HH:MM" [(ngModel)]="vreme">
+        </td>
+        <td *ngIf="pl.zakazivanje==true">
+          <button type="button" class="btn btn-outline-secondary" (click)="potvrdi(pl.naziv, pl.idP, pl.trajanje)">Potvrdi</button>
+        </td>
+        <td>
+          <span style="color: red;" *ngIf="poruka!=''">{{poruka}}</span>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  <app-footer></app-footer>

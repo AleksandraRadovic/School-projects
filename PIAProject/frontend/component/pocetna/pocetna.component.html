@@ -1,0 +1,121 @@
+<app-header></app-header>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/ordinacija1.jpg"  alt="ordinacija1" class="d-block w-100" style="max-height:50%;">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/ordinacija2.jpg"  alt="ordinacija2" class="d-block w-100" style="max-height:50%;">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/ordinacija3.jpg"  alt="ordinacija3" class="d-block w-100" style="max-height:50%;">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/ordinacija4.jpg"  alt="ordinacija4" class="d-block w-100" style="max-height:50%;">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/ordinacija5.jpg" alt="ordinacija5" class="d-block w-100" style="max-height:50%;">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+<div class="container-fluid">           
+    <table class="table-responsive table-borderless">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Specijalizacija</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let l of sviLekari">
+          <td>
+            <img src="assets/{{l.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{l.ime}}</td>
+          <td>{{l.prezime}}</td>
+          <td>{{l.specijalizacija}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 p-2 text-bg-primary">
+        <h3>Sortiranje:</h3>
+    </div>
+    <div class=" col-sm-6 btn-group">
+        <button type="button" class="btn btn-primary" (click)="sortirajImeRastuce()">Sortiraj po imenu rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajImeOpadajuce()">Sortiraj po imenu opadajuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajPreizmeRastuce()">Sortiraj po prezimenu rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajPrezimeOpadajuce()">Sortiraj po prezimenu opadajuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajSpecijalizacijuRastuce()">Sortiraj po specijalizaciji rastuce</button>
+        <button type="button" class="btn btn-primary" (click)="sortirajSpecijalizacijuOpadajuce()">Sortiraj po specijalizaciji opadajuce</button>
+      </div>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+    <div class="col-sm-2  text-bg-primary">
+        <h3>Pretrazivanje:</h3>
+    </div>
+    <div class="col-sm-8">
+        <input type="text" name="parametarIme" class="form" placeholder="Ime za pretragu" [(ngModel)]="parametarIme">
+        <input type="text" name="parametarPrezime" class="form" placeholder="Prezime za pretragu" [(ngModel)]="parametarPrezime">
+        <input type="text" name="parametarSpecijalizacija" class="form" placeholder="Specijalizacija za pretragu" [(ngModel)]="parametarSpecijalizacija">
+        <button type="button" class="btn btn-primary btn-lg" (click)="pretrazi()">Pretrazi</button>
+    </div>
+    <span style="color: red;">{{porukaPretrage}}</span>
+  </div>
+  <div  *ngIf="pretrazeniLekari.length>0">
+    <h2> Rezultati pretrage:</h2>
+  </div>
+ 
+  <div class="container-fluid">           
+    <table class="table-responsive table-borderless" *ngIf="pretrazeniLekari.length>0">
+      <thead>
+        <tr>
+          <th>Slika</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Specijalizacija</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pl of pretrazeniLekari">
+          <td>
+            <img src="assets/{{pl.slika}}" width="50" height="50" class="rounded" alt="Profilna slika">
+          </td>
+          <td>{{pl.ime}}</td>
+          <td>{{pl.prezime}}</td>
+          <td>{{pl.specijalizacija}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  <app-footer></app-footer>

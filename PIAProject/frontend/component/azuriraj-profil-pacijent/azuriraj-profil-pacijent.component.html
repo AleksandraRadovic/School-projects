@@ -1,0 +1,33 @@
+<app-header></app-header>
+<h4 class="mt-3 text-center">Azuriranje pacijenta</h4>
+<div class="mx-auto d-flex justify-content-center" style="max-width: 600px;">
+    <form class="text-center mx-5" style="width: 100%;">
+       
+
+        <input type="text" name="kor_ime" class="form" placeholder="Azuriraj korisnicko ime" [(ngModel)]="novo_kor_ime">
+    <br>
+        <input type="password" name="lozinka" class="form" placeholder="Azuriraj lozinku" [(ngModel)]="lozinka">
+        <br>
+        <input type="text" name="ime" class="form" placeholder="Azuriraj ime" [(ngModel)]="ime">
+        <br>
+        <input type="text" name="prezime" class="form" placeholder="Azuriraj prezime" [(ngModel)]="prezime">
+        <br>
+        <input type="text" name="adresa" class="form" placeholder="Azuriraj adresu" [(ngModel)]="adresa">
+        <br>
+        <input type="text" name="kontakt_telefon" class="form" placeholder="Azuriraj kontakt telefon" [(ngModel)]="kontakt_telefon">
+        <br>
+        <input type="text" name="email" class="form" placeholder="Azuriraj email" [(ngModel)]="email">
+        <br>
+        <input type="file" id="slika" name="slika" value="" (change)="ucitaj($event)">
+        <br>
+        <button class="btn btn-outline-light text-dark mt-3" (click)="azuriraj()">Azuriraj podatke</button>
+        <br>
+        <span style="color: red;">{{poruka}}</span>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>
