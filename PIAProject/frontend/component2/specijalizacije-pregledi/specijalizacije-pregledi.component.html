@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div class="container-fluid" *ngFor="let s of sveSpecijalizacije" >     
+    <h2 style="color: darksalmon;">
+        {{s.naziv}}
+    </h2>    
+    <table class="table-responsive table-borderless" *ngIf="s.pregledi.length>0">
+      <thead>
+        <tr>
+          <th>Naziv pregleda</th>
+          <th>Specijalizacija</th>
+          <th>Trajanje</th>
+          <th>Cena pregleda</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of s.pregledi">
+          <td>{{p.naziv}}</td>
+          <td>{{p.specijalizacija}}</td>
+          <td>{{p.trajanje}}</td>
+          <td>{{p.cena}}</td>
+          <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary" (click)="azuriraj(p.idP)">Azuriraj</button>
+                <button type="button" class="btn btn-outline-secondary" (click)="obrisi(p.idP)">Obrisi</button>
+              </div>          
+            </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 style="color: darksalmon;">
+        Dodajte pregled za specijalizaciju {{s.naziv}}:
+        <button type="button" class="btn btn-outline-secondary" (click)="dodaj(s.naziv)">Dodaj</button>
+    </h4>
+  </div>
+  <br>
+  <br>
+
+  <h4 style="color: darksalmon;">
+    Dodajte novu specijalizaciju:
+    <div *ngIf="novaSpecijalizacija==false">
+      <button type="button" class="btn btn-outline-secondary" (click)="dodaj_specijalizaciju()">Dodaj specijalizaciju</button>
+    </div>
+</h4> 
+<div *ngIf="novaSpecijalizacija==true">
+  <input type="text" name="nazziv" class="form" placeholder="Unesite naziv nove specijalizacije" [(ngModel)]="naziv">
+</div>
+<div *ngIf="novaSpecijalizacija==true">
+  <button type="button" class="btn btn-outline-secondary" (click)="potvrdi()">Potvrdi</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>

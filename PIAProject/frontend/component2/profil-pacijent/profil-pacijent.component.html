@@ -1,0 +1,36 @@
+<app-header></app-header>
+<h4 class="mt-3 text-center"> Pregled profila</h4>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+            <img src="assets/{{pacijent.slika}}"
+                class="rounded-circle img-fluid" alt="Profilna slika" width="200" height="200" />
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0" style="font-size:xx-large; font-style:oblique;">
+            {{pacijent.ime}}
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0" style="font-size:xx-large; font-style:oblique;">
+                {{pacijent.prezime}}
+             </div>
+             <div class="col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0" style="font-size:xx-large; font-style:oblique;">
+                {{pacijent.adresa}}
+             </div>
+             <div class="col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0" style="font-size:xx-large; font-style:oblique;">
+               {{pacijent.email}}
+             </div>
+             <div class="col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0" style="font-size:xx-large; font-style:oblique;">
+                {{pacijent.kontakt_telefon}}
+             </div>
+             <div>
+                <button type="button" class=" col-lg-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0 btn btn-outline-dark " (click)="azuriraj(pacijent.kor_ime)">Azuriraj profil</button>
+              </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>

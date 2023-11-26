@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<h3 class="text-center">Promena lozinke</h3>
+<form class="text-center">     
+        
+        <input type="password" class="form" placeholder="Stara lozinka" name="staraLozinka" [(ngModel)]='staraLozinka'>
+        <br>
+        <input type="password" class="form" placeholder="Nova lozinka" name="novaLozinka" [(ngModel)]='novaLozinka'>
+        <br>
+        <input type="password" class="form" placeholder="Ponovite novu lozinku" name = "potvrdaLozinke" [(ngModel)]='potvrdaLozinke'>
+        <br>
+        <button class="btn btn-outline-light text-dark mt-3" (click)='promeni()'>Potvrdi</button>
+        <br>
+        <span style="color: red;">{{poruka}}</span>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>
