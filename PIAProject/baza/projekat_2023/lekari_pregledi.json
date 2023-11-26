@@ -1,0 +1,152 @@
+[{
+  "_id": {
+    "$oid": "64eef4196ead3402f8e51469"
+  },
+  "lekar": "kor_ime2",
+  "IDp": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4196ead3402f8e5146b"
+  },
+  "lekar": "kor_ime2",
+  "IDp": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef44a6ead3402f8e5147f"
+  },
+  "lekar": "kor_ime8",
+  "IDp": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef44a6ead3402f8e51481"
+  },
+  "lekar": "kor_ime8",
+  "IDp": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef44a6ead3402f8e51483"
+  },
+  "lekar": "kor_ime8",
+  "IDp": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef44a6ead3402f8e51485"
+  },
+  "lekar": "kor_ime8",
+  "IDp": 19,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4a36ead3402f8e5149e"
+  },
+  "lekar": "kor_ime10",
+  "IDp": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4a36ead3402f8e514a0"
+  },
+  "lekar": "kor_ime10",
+  "IDp": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4df6ead3402f8e514b3"
+  },
+  "lekar": "milica_123",
+  "IDp": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4df6ead3402f8e514b5"
+  },
+  "lekar": "milica_123",
+  "IDp": 20,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5196ead3402f8e514ce"
+  },
+  "lekar": "marko_123",
+  "IDp": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5356ead3402f8e514e3"
+  },
+  "lekar": "lekar_milica",
+  "IDp": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5356ead3402f8e514e5"
+  },
+  "lekar": "lekar_milica",
+  "IDp": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5556ead3402f8e514f3"
+  },
+  "lekar": "lekar_iskra",
+  "IDp": 26,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5556ead3402f8e514f6"
+  },
+  "lekar": "lekar_iskra",
+  "IDp": 27,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5c46ead3402f8e51518"
+  },
+  "lekar": "lekar_ivica",
+  "IDp": 22,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5c46ead3402f8e5151a"
+  },
+  "lekar": "lekar_ivica",
+  "IDp": 23,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5f56ead3402f8e5152c"
+  },
+  "lekar": "lekar_jakov",
+  "IDp": 24,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5f56ead3402f8e5152f"
+  },
+  "lekar": "lekar_jakov",
+  "IDp": 25,
+  "__v": 0
+}]

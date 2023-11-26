@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "64e534df6ecd6d89e21ba609"
+  },
+  "kor_ime": "kor_ime2",
+  "lozinka": "Lozinka_2",
+  "ime": "Stefan",
+  "prezime": "Stefanovic",
+  "adresa": "Nehurova 15",
+  "kontakt_telefon": "+381640000002",
+  "br_lek_licence": "000002",
+  "specijalizacija": "oftamologija",
+  "ogranak_ordinacije": "oftamologija",
+  "email": "ime@gmail.com",
+  "slika": "genericka.png"
+},
+{
+  "_id": {
+    "$oid": "64e5d005bb71e7154c9e63b3"
+  },
+  "kor_ime": "kor_ime8",
+  "lozinka": "Lozinka_8",
+  "ime": "Anica",
+  "prezime": "Anic",
+  "adresa": "Francuska 33",
+  "kontakt_telefon": "+381640000044",
+  "br_lek_licence": "000004",
+  "specijalizacija": "dermatologija",
+  "ogranak_ordinacije": "dermatologija",
+  "email": "anica@gmail.com",
+  "slika": "genericka.png"
+},
+{
+  "_id": {
+    "$oid": "64e5d06cbb71e7154c9e63b5"
+  },
+  "kor_ime": "kor_ime10",
+  "lozinka": "Lozinka_10",
+  "ime": "Milos",
+  "prezime": "Milosevic",
+  "adresa": "Francuska 55",
+  "kontakt_telefon": "+381640000055",
+  "br_lek_licence": "000052",
+  "specijalizacija": "hirurgija",
+  "ogranak_ordinacije": "hirurgija",
+  "email": "milos@gmail.com",
+  "slika": "genericka.png"
+},
+{
+  "_id": {
+    "$oid": "64eef2eb6ead3402f8e51418"
+  },
+  "kor_ime": "milica_123",
+  "lozinka": "Milica_123",
+  "ime": "Milica",
+  "prezime": "Milic",
+  "adresa": "Beogradska 17",
+  "kontakt_telefon": "+3816163636391",
+  "br_lek_licence": "002345",
+  "specijalizacija": "dermatologija",
+  "ogranak_ordinacije": "dermatologija",
+  "email": "milica@gmail.com",
+  "slika": "genericka.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef3226ead3402f8e51423"
+  },
+  "kor_ime": "marko_123",
+  "lozinka": "Marko_1234",
+  "ime": "Marko",
+  "prezime": "Markovic",
+  "adresa": "Prizrenski put",
+  "kontakt_telefon": "+3816163636302",
+  "br_lek_licence": "002346",
+  "specijalizacija": "anesteziologija",
+  "ogranak_ordinacije": "anesteziologija",
+  "email": "marko@gmail.com",
+  "slika": "slika1.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef3526ead3402f8e5142b"
+  },
+  "kor_ime": "lekar_milica",
+  "lozinka": "Lekar_Milica1",
+  "ime": "Milica",
+  "prezime": "Milicic",
+  "adresa": "Nehurova 15",
+  "kontakt_telefon": "+3816163636200",
+  "br_lek_licence": "002340",
+  "specijalizacija": "hirurgija",
+  "ogranak_ordinacije": "hirurgija",
+  "email": "milica@gmail.com",
+  "slika": "genericka.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef37a6ead3402f8e51433"
+  },
+  "kor_ime": "lekar_iskra",
+  "lozinka": "Lekar_Iskra1",
+  "ime": "Iskra",
+  "prezime": "Radmanovac",
+  "adresa": "Vrsacki put 10",
+  "kontakt_telefon": "+3816163636100",
+  "br_lek_licence": "002341",
+  "specijalizacija": "onkologija",
+  "ogranak_ordinacije": "onkologija",
+  "email": "iskra@gmail.com",
+  "slika": "genericka.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef39e6ead3402f8e5143b"
+  },
+  "kor_ime": "lekar_ivica",
+  "lozinka": "Lekar_Ivica1",
+  "ime": "Ivica",
+  "prezime": "Ivicic",
+  "adresa": "Jurija Gagrina 8",
+  "kontakt_telefon": "+381616363600",
+  "br_lek_licence": "002342",
+  "specijalizacija": "fizijatrija",
+  "ogranak_ordinacije": "fizijatrija",
+  "email": "ivica@gmail.com",
+  "slika": "genericka.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef3da6ead3402f8e51443"
+  },
+  "kor_ime": "lekar_jakov",
+  "lozinka": "Lekar_Jakov1",
+  "ime": "Jakov",
+  "prezime": "Jakovljevic",
+  "adresa": "Ustanicka 32",
+  "kontakt_telefon": "+3816163636600",
+  "br_lek_licence": "002341",
+  "specijalizacija": "onkologija",
+  "ogranak_ordinacije": "onkologija",
+  "email": "jakov@gmail.com",
+  "slika": "genericka.png",
+  "__v": 0
+}]

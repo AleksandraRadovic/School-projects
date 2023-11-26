@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "64e5c04da923b5d2f20d6df1"
+  },
+  "kor_ime": "kor_ime12",
+  "lozinka": "Lozinka123_",
+  "ime": "Pera",
+  "prezime": "Peric",
+  "adresa": "Sabacka 18",
+  "kontakt_telefon": "+3816163636372",
+  "email": "pera@gmail.com",
+  "slika": "genericka.png",
+  "status": "odbijeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5c0d0a923b5d2f20d6df6"
+  },
+  "kor_ime": "kor_ime13",
+  "lozinka": "Lozinka_1234",
+  "ime": "Jovan",
+  "prezime": "Jovanovic",
+  "adresa": "Nehurova 15",
+  "kontakt_telefon": "+3816163636399",
+  "email": "jovan123@gmail.com",
+  "slika": "slika1.jpg",
+  "status": "prihvaceno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5c152a923b5d2f20d6dfd"
+  },
+  "kor_ime": "mika123",
+  "lozinka": "Mika_1234",
+  "ime": "Milos",
+  "prezime": "Milosevic",
+  "adresa": "Nema ulice",
+  "kontakt_telefon": "+3816163636367",
+  "email": "mika1234@gmail.com",
+  "slika": "slika1.jpg",
+  "status": "odbijeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5c1acabd929df32b76100"
+  },
+  "kor_ime": "pera",
+  "lozinka": "Pera_1234",
+  "ime": "Pera",
+  "prezime": "Peric",
+  "adresa": "Beogradska 72",
+  "kontakt_telefon": "+3816163636300",
+  "email": "pera@gmail.com",
+  "slika": "slika1.jpg",
+  "status": "neobradjeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef6586ead3402f8e5153a"
+  },
+  "kor_ime": "pacijent_sofija",
+  "lozinka": "Pacijent_sofija1",
+  "ime": "Sofija",
+  "prezime": "Sofijanic",
+  "adresa": "Majke Jevrosime 50",
+  "kontakt_telefon": "+3816163636371",
+  "email": "sofija@gmail.com",
+  "slika": "genericka.png",
+  "status": "prihvaceno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef6946ead3402f8e51541"
+  },
+  "kor_ime": "pacijent_bojan",
+  "lozinka": "Pacijent_Bojan1",
+  "ime": "Bojan",
+  "prezime": "Bojanic",
+  "adresa": "Nema ulice",
+  "kontakt_telefon": "+3816163636399",
+  "email": "bojan@gmail.com",
+  "slika": "genericka.png",
+  "status": "neobradjeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef8726ead3402f8e5158c"
+  },
+  "kor_ime": "pacijent_valentina",
+  "lozinka": "Pacijent_1",
+  "ime": "Valentina",
+  "prezime": "Valentinic",
+  "adresa": "Topolska 18",
+  "kontakt_telefon": "+3816163636322",
+  "email": "valentina@gmail.com",
+  "slika": "slika2.jpg",
+  "status": "prihvaceno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef8d26ead3402f8e51597"
+  },
+  "kor_ime": "pacijent_nemanja",
+  "lozinka": "Pacijent_2",
+  "ime": "Nemanja",
+  "prezime": "Nemanjic",
+  "adresa": "Nehurova 29",
+  "kontakt_telefon": "+381616363333",
+  "email": "nemanje@gmail.com",
+  "slika": "slika3.jpg",
+  "status": "prihvaceno",
+  "__v": 0
+}]

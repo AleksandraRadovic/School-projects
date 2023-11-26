@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "64e733a4b0ceb822dfae1892"
+  },
+  "naziv": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64e73444b0ceb822dfae189a"
+  },
+  "naziv": "oftamologija"
+},
+{
+  "_id": {
+    "$oid": "64e734b0b0ceb822dfae189d"
+  },
+  "naziv": "dermatologija"
+},
+{
+  "_id": {
+    "$oid": "64e73514b0ceb822dfae18a0"
+  },
+  "naziv": "anesteziologija"
+},
+{
+  "_id": {
+    "$oid": "64ea89487bfabb8d2eb08042"
+  },
+  "naziv": "fizijatrija",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ea89947bfabb8d2eb08050"
+  },
+  "naziv": "onkologija",
+  "__v": 0
+}]

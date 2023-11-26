@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "64e7c36c8e3eeb051c9e3533"
+  },
+  "idI": 1,
+  "zpID": 4,
+  "razlog_dolaska": "posekotina",
+  "dijagnoza": "duboka rana, sivenje",
+  "preporucena_terapija": "redovno previjanje",
+  "datum_kontrole": "2023-07-14",
+  "pacijent": "kor_ime1"
+},
+{
+  "_id": {
+    "$oid": "64e7c4298e3eeb051c9e3534"
+  },
+  "idI": 2,
+  "zpID": 5,
+  "razlog_dolaska": "kontrola, skidanje konaca",
+  "dijagnoza": "kontrola, sve je u redu",
+  "preporucena_terapija": "nema",
+  "datum_kontrole": "kontrola nije potrebna",
+  "pacijent": "kor_ime1"
+},
+{
+  "_id": {
+    "$oid": "64e8a62bd2e752e006fadf08"
+  },
+  "idI": 3,
+  "zpID": 8,
+  "razlog_dolaska": "kontrola dioptrije",
+  "dijagnoza": "nema promene",
+  "preporucena_terapija": "nastaviti redovno nositi naocare/sociva",
+  "datum_kontrole": "po potrebi",
+  "pacijent": "kor_ime1",
+  "__v": 0
+}]

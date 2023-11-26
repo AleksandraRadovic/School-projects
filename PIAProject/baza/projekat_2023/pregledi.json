@@ -1,0 +1,362 @@
+[{
+  "_id": {
+    "$oid": "64e7a03f8e3eeb051c9e350e"
+  },
+  "idP": 1,
+  "specijalizacija": "hirurgija",
+  "naziv": "vadjenje konaca",
+  "trajanje": 15,
+  "cena": "1500",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a0b38e3eeb051c9e350f"
+  },
+  "idP": 2,
+  "specijalizacija": "hirurgija",
+  "naziv": "sivenje rane",
+  "trajanje": 20,
+  "cena": "1500",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a0df8e3eeb051c9e3510"
+  },
+  "idP": 3,
+  "specijalizacija": "hirurgija",
+  "naziv": "operativni zahvat",
+  "trajanje": 15,
+  "cena": "10000",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a12d8e3eeb051c9e3513"
+  },
+  "idP": 4,
+  "specijalizacija": "oftamologija",
+  "naziv": "kontrola dioptrije",
+  "trajanje": 45,
+  "cena": "3000",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a14d8e3eeb051c9e3514"
+  },
+  "idP": 5,
+  "specijalizacija": "oftamologija",
+  "naziv": "predoperativni pregled",
+  "trajanje": 15,
+  "cena": "4000",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a1738e3eeb051c9e3515"
+  },
+  "idP": 6,
+  "specijalizacija": "dermatologija",
+  "naziv": "pregled lica",
+  "trajanje": 30,
+  "cena": "4000",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a1908e3eeb051c9e3516"
+  },
+  "idP": 7,
+  "specijalizacija": "dermatologija",
+  "naziv": "kontrola benova",
+  "trajanje": 20,
+  "cena": "3500",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a1ac8e3eeb051c9e3517"
+  },
+  "idP": 8,
+  "specijalizacija": "dermatologija",
+  "naziv": "ciscenje lica",
+  "trajanje": 75,
+  "cena": "7000",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a1d58e3eeb051c9e3518"
+  },
+  "idP": 9,
+  "specijalizacija": "anesteziologija",
+  "naziv": "konsultacije",
+  "trajanje": 25,
+  "cena": "5000",
+  "status": "validan"
+},
+{
+  "_id": {
+    "$oid": "64e7a1f98e3eeb051c9e3519"
+  },
+  "idP": 10,
+  "specijalizacija": "anesteziologija",
+  "naziv": "konsultacije",
+  "trajanje": 10,
+  "cena": "2500",
+  "status": "nevalidan"
+},
+{
+  "_id": {
+    "$oid": "64e8b0753508c1fb74c1a377"
+  },
+  "idP": 11,
+  "specijalizacija": "oftamologija",
+  "naziv": "skidanje katarakte",
+  "trajanje": 45,
+  "cena": "25000",
+  "status": "nevalidan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e9bb7bce9e380210c23272"
+  },
+  "idP": 12,
+  "specijalizacija": "hirurgija",
+  "naziv": "operacija slepog creva",
+  "trajanje": 120,
+  "cena": "55500",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e9e351de9ccfccb54c64a6"
+  },
+  "idP": 13,
+  "specijalizacija": "hirurgija",
+  "naziv": "operacija srcanog zaliska",
+  "trajanje": 300,
+  "cena": "353000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ee320a1ef6c00fdafeee2b"
+  },
+  "idP": 15,
+  "specijalizacija": "oftamologija",
+  "naziv": "operacija mreznjace",
+  "trajanje": 150,
+  "cena": "150000",
+  "status": "neobradjeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeef7004fdf9bf6de24e02"
+  },
+  "idP": 16,
+  "specijalizacija": "oftamologija",
+  "naziv": "skidanje katarakte",
+  "trajanje": 30,
+  "cena": "20000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeef8704fdf9bf6de24e05"
+  },
+  "idP": 17,
+  "specijalizacija": "oftamologija",
+  "naziv": "skidanje dioptrije",
+  "trajanje": 60,
+  "cena": "300000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeefa104fdf9bf6de24e0f"
+  },
+  "idP": 18,
+  "specijalizacija": "dermatologija",
+  "naziv": "epilacija nogu",
+  "trajanje": 20,
+  "cena": "16000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeefaa04fdf9bf6de24e12"
+  },
+  "idP": 19,
+  "specijalizacija": "dermatologija",
+  "naziv": "epilacija ruku",
+  "trajanje": 10,
+  "cena": "10000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeefb404fdf9bf6de24e15"
+  },
+  "idP": 20,
+  "specijalizacija": "dermatologija",
+  "naziv": "skidanje mladeza",
+  "trajanje": 15,
+  "cena": "5000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeefde04fdf9bf6de24e1f"
+  },
+  "idP": 21,
+  "specijalizacija": "fizijatrija",
+  "naziv": "pregled kicme",
+  "trajanje": 30,
+  "cena": "3000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eeefec04fdf9bf6de24e22"
+  },
+  "idP": 22,
+  "specijalizacija": "fizijatrija",
+  "naziv": "masaza ledja",
+  "trajanje": 60,
+  "cena": "6000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef00304fdf9bf6de24e25"
+  },
+  "idP": 23,
+  "specijalizacija": "fizijatrija",
+  "naziv": "postoperativni oporavak",
+  "trajanje": 45,
+  "cena": "5000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef03204fdf9bf6de24e2f"
+  },
+  "idP": 24,
+  "specijalizacija": "onkologija",
+  "naziv": "pregled malignog oboljenja",
+  "trajanje": 80,
+  "cena": "8000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef04204fdf9bf6de24e32"
+  },
+  "idP": 25,
+  "specijalizacija": "onkologija",
+  "naziv": "pregled benignog oboljenja",
+  "trajanje": 80,
+  "cena": "8000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef05204fdf9bf6de24e35"
+  },
+  "idP": 26,
+  "specijalizacija": "onkologija",
+  "naziv": "operacija malignog oboljenja",
+  "trajanje": 300,
+  "cena": "800000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef06504fdf9bf6de24e38"
+  },
+  "idP": 27,
+  "specijalizacija": "onkologija",
+  "naziv": "operacija benignog oboljenja",
+  "trajanje": 180,
+  "cena": "600000",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4c26ead3402f8e514aa"
+  },
+  "idP": 28,
+  "specijalizacija": "hirurgija",
+  "naziv": "operacija zuci",
+  "trajanje": 200,
+  "cena": "37000",
+  "status": "nevalidan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5016ead3402f8e514bf"
+  },
+  "idP": 29,
+  "specijalizacija": "dermatologija",
+  "naziv": "skidanje bradavica",
+  "trajanje": 25,
+  "cena": "2500",
+  "status": "neobradjeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef56e6ead3402f8e514fe"
+  },
+  "idP": 30,
+  "specijalizacija": "onkologija",
+  "naziv": "operacija tumora mozga",
+  "trajanje": 555,
+  "cena": "555555",
+  "status": "validan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5936ead3402f8e51501"
+  },
+  "idP": 31,
+  "specijalizacija": "onkologija",
+  "naziv": "operacija tumora pluca",
+  "trajanje": 456,
+  "cena": "456000",
+  "status": "neobradjeno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef5e16ead3402f8e51523"
+  },
+  "idP": 32,
+  "specijalizacija": "fizijatrija",
+  "naziv": "jacanje muskulature tela posle operacije",
+  "trajanje": 75,
+  "cena": "7500",
+  "status": "neobradjeno",
+  "__v": 0
+}]

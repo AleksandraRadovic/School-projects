@@ -1,0 +1,129 @@
+[{
+  "_id": {
+    "$oid": "64e533fe6ecd6d89e21ba601"
+  },
+  "kor_ime": "kor_ime1",
+  "lozinka": "Lozinka_12",
+  "tip": "pacijent"
+},
+{
+  "_id": {
+    "$oid": "64e534246ecd6d89e21ba602"
+  },
+  "kor_ime": "kor_ime2",
+  "lozinka": "Lozinka_2",
+  "tip": "lekar"
+},
+{
+  "_id": {
+    "$oid": "64e534476ecd6d89e21ba603"
+  },
+  "kor_ime": "menadzer",
+  "lozinka": "Menadzer_0",
+  "tip": "menadzer"
+},
+{
+  "_id": {
+    "$oid": "64e7d95d8e3eeb051c9e3544"
+  },
+  "kor_ime": "kor_ime22",
+  "lozinka": "Lozinka_22",
+  "tip": "pacijent"
+},
+{
+  "_id": {
+    "$oid": "64edb6e1b23d3f52b158eeff"
+  },
+  "kor_ime": "kor_ime8",
+  "lozinka": "Lozinka_8",
+  "tip": "lekar"
+},
+{
+  "_id": {
+    "$oid": "64eef2eb6ead3402f8e5141d"
+  },
+  "kor_ime": "milica_123",
+  "lozinka": "Milica_123",
+  "tip": "lekar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef3226ead3402f8e51425"
+  },
+  "kor_ime": "marko_123",
+  "lozinka": "Marko_1234",
+  "tip": "lekar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef3526ead3402f8e5142d"
+  },
+  "kor_ime": "lekar_milica",
+  "lozinka": "Lekar_Milica1",
+  "tip": "lekar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef37a6ead3402f8e51435"
+  },
+  "kor_ime": "lekar_iskra",
+  "lozinka": "Lekar_Iskra1",
+  "tip": "lekar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef39e6ead3402f8e5143d"
+  },
+  "kor_ime": "lekar_ivica",
+  "lozinka": "Lekar_Ivica1",
+  "tip": "lekar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef3da6ead3402f8e51445"
+  },
+  "kor_ime": "lekar_jakov",
+  "lozinka": "Lekar_Jakov1",
+  "tip": "lekar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef4773363d3f62c57d9a4"
+  },
+  "kor_ime": "kor_ime10",
+  "lozinka": "Lozinka_10",
+  "tip": "lekar"
+},
+{
+  "_id": {
+    "$oid": "64eef9606ead3402f8e515a1"
+  },
+  "kor_ime": "pacijent_sofija",
+  "lozinka": "Pacijent_sofija1",
+  "tip": "pacijent",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef9616ead3402f8e515a7"
+  },
+  "kor_ime": "pacijent_valentina",
+  "lozinka": "Pacijent_1",
+  "tip": "pacijent",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eef9626ead3402f8e515ad"
+  },
+  "kor_ime": "pacijent_nemanja",
+  "lozinka": "Pacijent_2",
+  "tip": "pacijent",
+  "__v": 0
+}]

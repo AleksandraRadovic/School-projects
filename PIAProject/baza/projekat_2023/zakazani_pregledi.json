@@ -1,0 +1,278 @@
+[{
+  "_id": {
+    "$oid": "64e79e058e3eeb051c9e3508"
+  },
+  "idZP": 1,
+  "pregled": "pregled lica",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime8",
+  "status": "zakazano",
+  "datum": "2023-12-31",
+  "krajPregleda": 630,
+  "pocetakPregleda": 600,
+  "vreme": "10:00"
+},
+{
+  "_id": {
+    "$oid": "64e7a99c8e3eeb051c9e3521"
+  },
+  "idZP": 2,
+  "pregled": "kontrola benova",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime8",
+  "status": "zakazano",
+  "datum": "2023-11-29",
+  "krajPregleda": 380,
+  "pocetakPregleda": 360,
+  "vreme": "12:00"
+},
+{
+  "_id": {
+    "$oid": "64e7a9df8e3eeb051c9e3525"
+  },
+  "idZP": 3,
+  "pregled": "kontrola dioptrije",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime2",
+  "status": "otkazano",
+  "datum": "2023-10-16",
+  "krajPregleda": 1065,
+  "pocetakPregleda": 1020,
+  "vreme": "17:00"
+},
+{
+  "_id": {
+    "$oid": "64e7aa1e8e3eeb051c9e3529"
+  },
+  "idZP": 4,
+  "pregled": "sivenje rane",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime10",
+  "status": "napisan izvestaj",
+  "datum": "2023-07-07",
+  "krajPregleda": 620,
+  "pocetakPregleda": 600,
+  "vreme": "10:00"
+},
+{
+  "_id": {
+    "$oid": "64e7aa7e8e3eeb051c9e352a"
+  },
+  "idZP": 5,
+  "pregled": "vadjenje konaca",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime10",
+  "status": "napisan izvestaj",
+  "datum": "2023-07-14",
+  "krajPregleda": 795,
+  "pocetakPregleda": 780,
+  "vreme": "13:00"
+},
+{
+  "_id": {
+    "$oid": "64e7d8cd8e3eeb051c9e3540"
+  },
+  "idZP": 7,
+  "pregled": "predoperativni pregled",
+  "pacijent": "kor_ime22",
+  "lekar": "kor_ime2",
+  "status": "obavljeno",
+  "datum": "2023-11-17",
+  "krajPregleda": 615,
+  "pocetakPregleda": 600,
+  "vreme": "10:00"
+},
+{
+  "_id": {
+    "$oid": "64e7d90b8e3eeb051c9e3542"
+  },
+  "idZP": 8,
+  "pregled": "kontrola dioptrije",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime2",
+  "status": "napisan izvestaj",
+  "datum": "2023-09-18",
+  "krajPregleda": 645,
+  "pocetakPregleda": 600,
+  "vreme": "10:00"
+},
+{
+  "_id": {
+    "$oid": "64ee149de332fa2390e78d9b"
+  },
+  "idZP": 9,
+  "pregled": "kontrola benova",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime8",
+  "status": "obavljeno",
+  "datum": "2023-11-11",
+  "krajPregleda": 860,
+  "pocetakPregleda": 840,
+  "vreme": "14:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ee2db41ef6c00fdafeee06"
+  },
+  "idZP": 10,
+  "pregled": "kontrola benova",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime8",
+  "status": "otkazano",
+  "datum": "2023-11-11",
+  "krajPregleda": 680,
+  "pocetakPregleda": 660,
+  "vreme": "11:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ee2f2a1ef6c00fdafeee1c"
+  },
+  "idZP": 11,
+  "pregled": "pregled lica",
+  "pacijent": "kor_ime1",
+  "lekar": "kor_ime8",
+  "status": "obavljeno",
+  "datum": "2023-09-18",
+  "krajPregleda": 690,
+  "pocetakPregleda": 660,
+  "vreme": "11:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefc402563e4ec864476e0"
+  },
+  "idZP": 12,
+  "pregled": "pregled benignog oboljenja",
+  "pacijent": "kor_ime22",
+  "lekar": "lekar_jakov",
+  "status": "zakazano",
+  "datum": "2023-10-10",
+  "krajPregleda": 680,
+  "pocetakPregleda": 600,
+  "vreme": "10:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefc842563e4ec864476ed"
+  },
+  "idZP": 13,
+  "pregled": "masaza ledja",
+  "pacijent": "kor_ime22",
+  "lekar": "lekar_ivica",
+  "status": "zakazano",
+  "datum": "2023-09-29",
+  "krajPregleda": 720,
+  "pocetakPregleda": 660,
+  "vreme": "11:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefc982563e4ec864476f6"
+  },
+  "idZP": 14,
+  "pregled": "skidanje mladeza",
+  "pacijent": "kor_ime22",
+  "lekar": "milica_123",
+  "status": "otkazano",
+  "datum": "2023-12-14",
+  "krajPregleda": 930,
+  "pocetakPregleda": 915,
+  "vreme": "15:15",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefd3d2563e4ec86447702"
+  },
+  "idZP": 15,
+  "pregled": "sivenje rane",
+  "pacijent": "pacijent_sofija",
+  "lekar": "lekar_milica",
+  "status": "zakazano",
+  "datum": "2023-09-17",
+  "krajPregleda": 770,
+  "pocetakPregleda": 750,
+  "vreme": "12:30",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefd4d2563e4ec8644770b"
+  },
+  "idZP": 16,
+  "pregled": "masaza ledja",
+  "pacijent": "pacijent_sofija",
+  "lekar": "lekar_ivica",
+  "status": "zakazano",
+  "datum": "2023-11-12",
+  "krajPregleda": 780,
+  "pocetakPregleda": 720,
+  "vreme": "12:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefd772563e4ec8644771b"
+  },
+  "idZP": 17,
+  "pregled": "pregled malignog oboljenja",
+  "pacijent": "pacijent_valentina",
+  "lekar": "lekar_jakov",
+  "status": "zakazano",
+  "datum": "2023-09-18",
+  "krajPregleda": 920,
+  "pocetakPregleda": 840,
+  "vreme": "14:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eefd8c2563e4ec86447724"
+  },
+  "idZP": 18,
+  "pregled": "operacija malignog oboljenja",
+  "pacijent": "pacijent_valentina",
+  "lekar": "lekar_iskra",
+  "status": "obavljeno",
+  "datum": "2024-01-20",
+  "krajPregleda": 780,
+  "pocetakPregleda": 480,
+  "vreme": "08:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ef02352563e4ec86447736"
+  },
+  "idZP": 19,
+  "pregled": "konsultacije",
+  "pacijent": "pacijent_nemanja",
+  "lekar": "marko_123",
+  "status": "zakazano",
+  "datum": "2023-11-11",
+  "krajPregleda": 685,
+  "pocetakPregleda": 660,
+  "vreme": "11:00",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ef025f2563e4ec8644775b"
+  },
+  "idZP": 20,
+  "pregled": "kontrola benova",
+  "pacijent": "pacijent_nemanja",
+  "lekar": "milica_123",
+  "status": "zakazano",
+  "datum": "2023-11-12",
+  "krajPregleda": 740,
+  "pocetakPregleda": 720,
+  "vreme": "12:00",
+  "__v": 0
+}]
