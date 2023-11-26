@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+  shopDB:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
+    volumes:
+      - dbshopdata:/var/lib/mysql
+    networks:
+          - myshopnet
+  shopDBMigration:
+    image: shopdbmigration
+    environment:
+      - DATABASE_SHOP_URL=shopDB
+    depends_on:
+      shopDB:
+        condition: service_healthy
+    networks:
+      - myshopnet
+  customer:
+    image: customer
+    environment:
+      - DATABASE_SHOP_URL=shopDB
+    depends_on:
+      - shopDBMigration
+    ports:
+      - 5003:5002
+    networks:
+      - myshopnet
+  courier:
+    image: courier
+    environment:
+      - DATABASE_SHOP_URL=shopDB
+    depends_on:
+      - shopDBMigration
+    ports:
+      - 5004:5002
+    networks:
+      - myshopnet
+  owner:
+    image: owner
+    environment:
+      - DATABASE_SHOP_URL=shopDB
+    depends_on:
+      - shopDBMigration
+    ports:
+      - 5005:5002
+    networks:
+      - myshopnet
+  adminer:
+    image: adminer
+    ports:
+      - 8081:8080
+    networks:
+      - myshopnet
+
+volumes:
+  dbshopdata:
+networks:
+  myshopnet:
+
